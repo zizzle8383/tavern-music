@@ -1,0 +1,161 @@
+[
+  {
+    "roomId": "crash_site",
+    "width": 2000,
+    "height": 480,
+    "startX": 1850,
+    "startY": 250,
+    "startR": 180,
+    "triggers": [
+      {
+        "hex": "00cc00",
+        "room": {
+          "hide": [
+            "ship_wall"
+          ]
+        }
+      },
+      {
+        "hex": "ff00ff",
+        "room": {
+          "name": "explosion"
+        }
+      },
+      {
+        "hex": "00ffff",
+        "world": {
+          "joinRoom": "cellar"
+        }
+      },
+      {
+        "hex": "00ccff",
+        "server": {
+          "grantItem": "bb_huggable"
+        }
+      },
+      {
+        "hex": "0099ff",
+        "server": {
+          "grantItem": "bb_beebee"
+        }
+      },
+      {
+        "hex": "f592e2",
+        "server": {
+          "grantItem": "bb_will"
+        }
+      },
+      {
+        "hex": "6633cc",
+        "server": {
+          "grantItem": "bb_astoria"
+        }
+      },
+      {
+        "hex": "ffcc00",
+        "server": {
+          "grantItem": "bb_oliver"
+        }
+      },
+      {
+        "hex": "66cc99",
+        "server": {
+          "grantItem": "bb_riggs"
+        }
+      },
+      {
+        "hex": "66ff00",
+        "server": {
+          "grantItem": "Gelatinous_Green"
+        }
+      }
+    ],
+    "spriteSheet": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/sprites.json",
+    "background": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/background.png",
+    "foreground": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/foreground.png",
+    "navMesh": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/navmesh.png",
+    "map": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/map.png",
+    "layout": "/media/rooms/crash_site/38687f4eeae551d20ad2fb689a4fc389/layout.json"
+  },
+  {
+    "roomId": "cellar",
+    "width": 855,
+    "height": 480,
+    "startX": 100,
+    "startY": 380,
+    "startR": 180,
+    "triggers": [
+      {
+        "hex": "ff0000",
+        "world": {
+          "joinRoom": "tavern"
+        }
+      },
+      {
+        "hex": "7f0000",
+        "world": {
+          "joinRoom": "crash_site"
+        }
+      }
+    ],
+    "spriteSheet": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/sprites.json",
+    "background": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/background.png",
+    "foreground": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/foreground.png",
+    "navMesh": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/navmesh.png",
+    "map": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/map.png",
+    "layout": "/media/rooms/cellar/1882ac56169e927d393618c9e6dfedc0/layout.json"
+  },
+  {
+    "roomId": "tavern",
+    "width": 855,
+    "height": 480,
+    "startX": 440,
+    "startY": 210,
+    "startR": 180,
+    "triggers": [
+      {
+        "hex": "ff0000",
+        "world": {
+          "joinRoom": "cellar"
+        }
+      },
+      {
+        "hex": "00ff00",
+        "world": {
+          "joinRoom": "port"
+        }
+      }
+    ],
+    "spriteSheet": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/sprites.json",
+    "background": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/background.png",
+    "foreground": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/foreground.png",
+    "navMesh": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/navmesh.png",
+    "map": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/map.png",
+	"layout": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/layout.json",
+	"music":"https://cdn.discordapp.com/attachments/246700012816302080/714341050088423428/Operation_Blackout_-_We_Are_The_Elite_-_HQ.mp3"
+  },
+  {
+    "roomId": "port",
+    "width": 2400,
+    "height": 480,
+    "startX": 1290,
+    "startY": 285,
+    "startR": 180,
+    "triggers": [
+      {
+        "hex": "990000",
+        "world": {
+          "joinRoom": "tavern"
+        }
+      }
+    ],
+    "isLobby": true,
+    "spriteSheet": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/sprites.json",
+    "background": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/background.png",
+    "foreground": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/foreground.png",
+    "navMesh": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/navmesh.png",
+    "map": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/map.png",
+    "music": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/music.mp3",
+    "layout": "/media/rooms/port/41c17afcf1f0ef1240d680e53bb17969/layout.json"
+  }
+]
