@@ -132,7 +132,7 @@
     "navMesh": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/navmesh.png",
     "map": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/map.png",
 	"layout": "/media/rooms/tavern/7b99ca66a0eecd0e3ac14f9055c91f5e/layout.json",
-	"music":"https://cdn.discordapp.com/attachments/246700012816302080/714341050088423428/Operation_Blackout_-_We_Are_The_Elite_-_HQ.mp3"
+	"music":"https://cdn.jsdelivr.net/gh/zizzle8383/tavern-music/music.mp3"
   },
   {
     "roomId": "port",
